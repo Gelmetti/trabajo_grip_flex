@@ -16,7 +16,9 @@
       html{
         scroll-behavior: smooth;
       }
-
+      img{
+        width: 100%;
+      }
       .wrapper {
         max-width: 960px;
         margin: auto;
@@ -211,10 +213,11 @@
         letter-spacing: 1px;
       }
 
-      .segunda.parte p {
+      .segunda-parte p {
       }
 
-      img {
+     
+      .segunda-parte img {
         width: 300px;
         float: left;
         margin: 10px 50px 20px 0px;
@@ -267,6 +270,20 @@
       animation: ejemploAnimacion 3s ease-in-out ;
       }
 
+      #arriba{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  position: fixed;
+  top: 550px;
+  left: 1200px;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #333;
+  
+}
+
       /*aqui comienza animacion abajo*/
 
       .arriba{
@@ -289,6 +306,7 @@
 
       div.scroll-container {
         display: flex;
+        align-items: center;
         background-color: #333;
         overflow: auto;
         white-space: nowrap;
@@ -298,6 +316,7 @@
 }
 
 div.scroll-container img {
+  width:320px;
   padding: 10px;
 }
 
@@ -313,34 +332,15 @@ div.scroll-container img {
 
 /*aqui termina video*/
 
-#arriba{
-  display: flex;
-  justify-content: center;
-  align-items:flex-start;
-  position: fixed;
-  top: 550px;
-  left: 1200px;
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
-  background-color: #333;
+
+
+.mejorafoto{
+  flex: 1;
   
 }
 
-.scroll-container{
-  width: 400px;
-  height: 600px;
 
-}
-
-
-
-
-      
-
-      
-
-    </style>
+</style>
   </head>
 
   <body>
@@ -442,15 +442,22 @@ div.scroll-container img {
 
       <div class="scroll-container">
         
+        <div class="mejorafoto"><img src="imagen_1.jpg" alt=""></div>
 
-        <img src="imagen_1.jpg" alt=>
-        <img src="imagen2.jpg"  alt=>
-        <img src="imagen_3.jpg" alt=>
-        <img src="imagen_4.jpg" alt=>
-        <img src="imagen_5.jpg" alt=>
-        <img src="imagen_6.jpg" alt=>
-        <img src="imagen_7.jpg" alt=> 
-        <img src="imagen_8.jpg" alt=>
+        <div class="mejorafoto"><img src="imagen2.jpg"  alt=""></div>
+
+        <div class="mejorafoto"><img src="imagen_3.jpg" alt=""></div>
+
+        <div class="mejorafoto"><img src="imagen_4.jpg" alt=""></div>
+
+        <div class="mejorafoto"><img src="imagen_5.jpg" alt=""></div>
+
+        <div class="mejorafoto"> <img src="imagen_6.jpg" alt=""></div>
+
+       <div class="mejorafoto"><img src="imagen_7.jpg" alt=""> </div>
+
+      <div class="mejorafoto"><img src="imagen_8.jpg" alt=""></div>
+        
         
       </div><!--scroll-container-->
 
