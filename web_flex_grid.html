@@ -140,25 +140,16 @@
       }
       
       /*capa*/
-      .container .showcase-container ::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(45, 45, 53, 0.24);
-      z-index: -1;
-      border-radius: 50px;
-      }
+      
 
       #showcase .showcase-container {
         position: absolute;
-        top: 500px;
-        left: 700px;
-        width: 450px;
+        top: 900px;
+        left: 750px;
+        width: 900px;
         height: 150px;
         text-align: center;
+        background-color: #333333d2;
         /* border: #444 solid 2px; */
         z-index: 2;
       }
@@ -213,8 +204,7 @@
         letter-spacing: 1px;
       }
 
-      .segunda-parte p {
-      }
+     
 
      
       .segunda-parte img {
@@ -254,7 +244,7 @@
         100% {transform: translateX(0);}}
 
       .derecha{
-        width: auto;
+      width: auto;
       height: auto;
       background-color: #09091634;
       animation: ejemploAnimacionderecha  2s ease-in-out ;}
@@ -270,19 +260,7 @@
       animation: ejemploAnimacion 3s ease-in-out ;
       }
 
-      #arriba{
-  display: flex;
-  justify-content: center;
-  align-items:flex-start;
-  position: fixed;
-  top: 550px;
-  left: 1200px;
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
-  background-color: #333;
-  
-}
+     
 
       /*aqui comienza animacion abajo*/
 
@@ -291,8 +269,8 @@
         display: flex;
         justify-content: center;
         align-items:flex-end;
-        top: 850px;
-        left: 1450px;
+        top: 950px;
+        right: 600px;
         width: 80px;
         height: 80px;
         border-radius: 30%;
@@ -304,26 +282,30 @@
 
       /*aqui comienza galeria fotos section 4*/
 
-      div.scroll-container {
-        display: flex;
-        align-items: center;
-        background-color: #333;
-        overflow: auto;
-        white-space: nowrap;
-        padding: 10px;
-        border-radius: 2%;
-       
-}
+      .scroll-container {
+        background-color: #444444ec;
+        padding: 50px ;
+      
+        display: grid;
+        grid-template-areas:
+        "mejorafoto1 mejorafoto2" 
+        "mejorafoto3 mejorafoto4"
+        "mejorafoto5 mejorafoto6"
+        "mejorafoto7 mejorafoto8";
+       }
 
-div.scroll-container img {
-  width:320px;
-  padding: 10px;
-}
+       .scroll-container img{
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border: #333 solid 5px;
+        border-radius: 5%;
+       }
+        
 
-.mejorafoto{
-  flex: 1;
-  
-}
+
+
+
 
 /* aqui termina galeria de fotos section 4*/
 
@@ -371,7 +353,7 @@ div.scroll-container img {
           <div class="container showcase-container">
             <h2><strong class="text-primary">¡Bienvenidos</strong> a tu punto de encuentro !</h2>
             <p>
-              Club de Aficionados<strong class="text-primary"> Suzuki Samurai</strong>! 🚙 
+              Club de Aficionados<strong class="text-primary"> <h2>Suzuki Samurai</h2></strong>! 🚙 
             </p>
           </div>
         </div>
@@ -380,7 +362,7 @@ div.scroll-container img {
         
         <div class="arriba">
         
-        <p><a href="#menu"></a>&#9757;</p>
+        <p><a href="#menu">&#8657;</a></p>
 
         </div>
 
@@ -437,7 +419,7 @@ div.scroll-container img {
           </p>
         </div><!--termina logo-->
       </div><!--termina segunda parte-->
-    </div><!--termina wrapper-->
+   </div><!--termina wrapper-->
       
 
     <div id="imagenes">
@@ -446,21 +428,21 @@ div.scroll-container img {
 
       <div class="scroll-container">
         
-        <div class="mejorafoto"><img src="imagen_1.jpg" alt=""></div>
+        <div class="mejorafoto1"><img src="imagen_1.jpg" alt=""></div>
 
-        <div class="mejorafoto"><img src="imagen2.jpg"  alt=""></div>
+        <div class="mejorafoto2"><img src="imagen2.jpg"  alt=""></div>
 
-        <div class="mejorafoto"><img src="imagen_3.jpg" alt=""></div>
+        <div class="mejorafoto3"><img src="imagen_3.jpg" alt=""></div>
 
-        <div class="mejorafoto"><img src="imagen_4.jpg" alt=""></div>
+        <div class="mejorafoto4"><img src="imagen_4.jpg" alt=""></div>
 
-        <div class="mejorafoto"><img src="imagen_5.jpg" alt=""></div>
+        <div class="mejorafoto5"><img src="imagen_5.jpg" alt=""></div>
 
-        <div class="mejorafoto"> <img src="imagen_6.jpg" alt=""></div>
+        <div class="mejorafoto6"> <img src="imagen_6.jpg" alt=""></div>
 
-       <div class="mejorafoto"><img src="imagen_7.jpg" alt=""> </div>
+       <div class="mejorafoto7"><img src="imagen_7.jpg" alt=""> </div>
 
-      <div class="mejorafoto"><img src="imagen_8.jpg" alt=""></div>
+      <div class="mejorafoto8"><img src="imagen_8.jpg" alt=""></div>
         
         
       </div><!--scroll-container-->
@@ -468,7 +450,7 @@ div.scroll-container img {
     </div><!--termina imagenes-->
 
     <div id="videoyoutube">
-      <iframe width="960" height="480" src="https://www.youtube.com/embed/x3w8502hKXk" title="Suzuki Samurai 4x4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="960" height="880" src="https://www.youtube.com/embed/x3w8502hKXk" title="Suzuki Samurai 4x4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </iframe>
 
     </div><!--termina videos-->
